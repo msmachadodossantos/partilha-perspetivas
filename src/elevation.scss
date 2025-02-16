@@ -1,0 +1,31 @@
+@import "variables";
+
+$cr-elevation-light-0: darken($cr-white, 8%);
+$cr-elevation-light-1: darken($cr-white, 13%);
+$cr-elevation-light-2: darken($cr-white, 21%);
+$cr-elevation-light-3: darken($cr-white, 34%);
+$cr-elevation-light-4: darken($cr-white, 55%);
+$cr-elevation-light-5: darken($cr-white, 89%);
+
+$cr-elevation-dark-0: lighten($cr-black, 8%);
+$cr-elevation-dark-1: lighten($cr-black, 13%);
+$cr-elevation-dark-2: lighten($cr-black, 21%);
+$cr-elevation-dark-3: lighten($cr-black, 34%);
+$cr-elevation-dark-4: lighten($cr-black, 55%);
+$cr-elevation-dark-5: lighten($cr-black, 89%);
+
+:root {
+  --cr-elevation-light-0: #{$cr-elevation-light-0};
+  --cr-elevation-light-1: #{$cr-elevation-light-1};
+  --cr-elevation-light-2: #{$cr-elevation-light-2};
+  --cr-elevation-light-3: #{$cr-elevation-light-3};
+  --cr-elevation-light-4: #{$cr-elevation-light-4};
+  --cr-elevation-light-5: #{$cr-elevation-light-5};
+
+  --cr-elevation-dark-0: #{$cr-elevation-dark-0};
+  --cr-elevation-dark-1: #{$cr-elevation-dark-1};
+  --cr-elevation-dark-2: #{$cr-elevation-dark-2};
+  --cr-elevation-dark-3: #{$cr-elevation-dark-3};
+  --cr-elevation-dark-4: #{$cr-elevation-dark-4};
+  --cr-elevation-dark-5: #{$cr-elevation-dark-5};
+}

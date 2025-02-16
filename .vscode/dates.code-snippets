@@ -1,0 +1,12 @@
+{
+  "Current date: YYYY-MM-DD": {
+    "scope": "",
+    "prefix": "Current date: YYYY-MM-DD",
+    "body": "${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}"
+  },
+  "Current second since the Unix epoch": {
+    "scope": "",
+    "prefix": "Current second since the Unix epoch",
+    "body": "${CURRENT_SECONDS_UNIX}"
+  }
+}

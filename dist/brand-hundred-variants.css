@@ -1,0 +1,336 @@
+/**
+ * Lighten a color by a specified amount.
+ *
+ * @param {Color} $color - The base color to lighten.
+ * @param {Number} $amount - The amount by which to lighten the color (default: 10%).
+ *
+ * @return {Color} - The resulting color after lightening.
+ */
+/**
+ * Adjust the tone of a color by a specified amount.
+ *
+ * @param {Color} $color - The base color to adjust the tone of.
+ * @param {Number} $amount - The amount by which to adjust the tone (default: 10%).
+ *
+ * @return {Color} - The resulting color after adjusting the tone.
+ */
+/**
+ * Darken a color by a specified amount.
+ *
+ * @param {Color} $color - The base color to darken.
+ * @param {Number} $amount - The amount by which to darken the color (default: 10%).
+ *
+ * @return {Color} - The resulting color after darkening.
+ */
+/**
+ * Mix two colors together by a specified amount.
+ *
+ * @param {Color} $color1 - The first color to mix.
+ * @param {Color} $color2 - The second color to mix.
+ * @param {Number} $amount - The amount by which to mix the colors (default: 50%).
+ *
+ * @return {Color} - The resulting color after mixing.
+ */
+:root {
+  --cr-brand: #004d61;
+  --cr-brand-light-1: #034f63;
+  --cr-brand-light-2: #055164;
+  --cr-brand-light-3: #085266;
+  --cr-brand-light-4: #0a5467;
+  --cr-brand-light-5: #0d5669;
+  --cr-brand-light-6: #0f586a;
+  --cr-brand-light-7: #12596c;
+  --cr-brand-light-8: #145b6e;
+  --cr-brand-light-9: #175d6f;
+  --cr-brand-light-10: #1a5f71;
+  --cr-brand-light-11: #1c6172;
+  --cr-brand-light-12: #1f6274;
+  --cr-brand-light-13: #216476;
+  --cr-brand-light-14: #246677;
+  --cr-brand-light-15: #266879;
+  --cr-brand-light-16: #29697a;
+  --cr-brand-light-17: #2b6b7c;
+  --cr-brand-light-18: #2e6d7d;
+  --cr-brand-light-19: #306f7f;
+  --cr-brand-light-20: #337181;
+  --cr-brand-light-21: #367282;
+  --cr-brand-light-22: #387484;
+  --cr-brand-light-23: #3b7685;
+  --cr-brand-light-24: #3d7887;
+  --cr-brand-light-25: #407a89;
+  --cr-brand-light-26: #427b8a;
+  --cr-brand-light-27: #457d8c;
+  --cr-brand-light-28: #477f8d;
+  --cr-brand-light-29: #4a818f;
+  --cr-brand-light-30: #4d8290;
+  --cr-brand-light-31: #4f8492;
+  --cr-brand-light-32: #528694;
+  --cr-brand-light-33: #548895;
+  --cr-brand-light-34: #578a97;
+  --cr-brand-light-35: #598b98;
+  --cr-brand-light-36: #5c8d9a;
+  --cr-brand-light-37: #5e8f9b;
+  --cr-brand-light-38: #61919d;
+  --cr-brand-light-39: #63929f;
+  --cr-brand-light-40: #6694a0;
+  --cr-brand-light-41: #6996a2;
+  --cr-brand-light-42: #6b98a3;
+  --cr-brand-light-43: #6e9aa5;
+  --cr-brand-light-44: #709ba7;
+  --cr-brand-light-45: #739da8;
+  --cr-brand-light-46: #759faa;
+  --cr-brand-light-47: #78a1ab;
+  --cr-brand-light-48: #7aa2ad;
+  --cr-brand-light-49: #7da4ae;
+  --cr-brand-light-50: #80a6b0;
+  --cr-brand-light-51: #82a8b2;
+  --cr-brand-light-52: #85aab3;
+  --cr-brand-light-53: #87abb5;
+  --cr-brand-light-54: #8aadb6;
+  --cr-brand-light-55: #8cafb8;
+  --cr-brand-light-56: #8fb1b9;
+  --cr-brand-light-57: #91b2bb;
+  --cr-brand-light-58: #94b4bd;
+  --cr-brand-light-59: #96b6be;
+  --cr-brand-light-60: #99b8c0;
+  --cr-brand-light-61: #9cbac1;
+  --cr-brand-light-62: #9ebbc3;
+  --cr-brand-light-63: #a1bdc5;
+  --cr-brand-light-64: #a3bfc6;
+  --cr-brand-light-65: #a6c1c8;
+  --cr-brand-light-66: #a8c2c9;
+  --cr-brand-light-67: #abc4cb;
+  --cr-brand-light-68: #adc6cc;
+  --cr-brand-light-69: #b0c8ce;
+  --cr-brand-light-70: #b3cad0;
+  --cr-brand-light-71: #b5cbd1;
+  --cr-brand-light-72: #b8cdd3;
+  --cr-brand-light-73: #bacfd4;
+  --cr-brand-light-74: #bdd1d6;
+  --cr-brand-light-75: #bfd3d8;
+  --cr-brand-light-76: #c2d4d9;
+  --cr-brand-light-77: #c4d6db;
+  --cr-brand-light-78: #c7d8dc;
+  --cr-brand-light-79: #c9dade;
+  --cr-brand-light-80: #ccdbdf;
+  --cr-brand-light-81: #cfdde1;
+  --cr-brand-light-82: #d1dfe3;
+  --cr-brand-light-83: #d4e1e4;
+  --cr-brand-light-84: #d6e3e6;
+  --cr-brand-light-85: #d9e4e7;
+  --cr-brand-light-86: #dbe6e9;
+  --cr-brand-light-87: #dee8ea;
+  --cr-brand-light-88: #e0eaec;
+  --cr-brand-light-89: #e3ebee;
+  --cr-brand-light-90: #e6edef;
+  --cr-brand-light-91: #e8eff1;
+  --cr-brand-light-92: #ebf1f2;
+  --cr-brand-light-93: #edf3f4;
+  --cr-brand-light-94: #f0f4f6;
+  --cr-brand-light-95: #f2f6f7;
+  --cr-brand-light-96: #f5f8f9;
+  --cr-brand-light-97: #f7fafa;
+  --cr-brand-light-98: #fafbfc;
+  --cr-brand-light-99: #fcfdfd;
+  --cr-brand-light-100: white;
+  --cr-brand-tone-1: #014e61;
+  --cr-brand-tone-2: #034e62;
+  --cr-brand-tone-3: #044f62;
+  --cr-brand-tone-4: #054f62;
+  --cr-brand-tone-5: #065063;
+  --cr-brand-tone-6: #085063;
+  --cr-brand-tone-7: #095163;
+  --cr-brand-tone-8: #0a5163;
+  --cr-brand-tone-9: #0c5264;
+  --cr-brand-tone-10: #0d5264;
+  --cr-brand-tone-11: #0e5364;
+  --cr-brand-tone-12: #0f5365;
+  --cr-brand-tone-13: #115465;
+  --cr-brand-tone-14: #125465;
+  --cr-brand-tone-15: #135566;
+  --cr-brand-tone-16: #145566;
+  --cr-brand-tone-17: #165666;
+  --cr-brand-tone-18: #175667;
+  --cr-brand-tone-19: #185767;
+  --cr-brand-tone-20: #1a5767;
+  --cr-brand-tone-21: #1b5868;
+  --cr-brand-tone-22: #1c5868;
+  --cr-brand-tone-23: #1d5968;
+  --cr-brand-tone-24: #1f5968;
+  --cr-brand-tone-25: #205a69;
+  --cr-brand-tone-26: #215a69;
+  --cr-brand-tone-27: #235b69;
+  --cr-brand-tone-28: #245b6a;
+  --cr-brand-tone-29: #255c6a;
+  --cr-brand-tone-30: #265c6a;
+  --cr-brand-tone-31: #285d6b;
+  --cr-brand-tone-32: #295d6b;
+  --cr-brand-tone-33: #2a5e6b;
+  --cr-brand-tone-34: #2c5e6c;
+  --cr-brand-tone-35: #2d5f6c;
+  --cr-brand-tone-36: #2e5f6c;
+  --cr-brand-tone-37: #2f606c;
+  --cr-brand-tone-38: #31606d;
+  --cr-brand-tone-39: #32616d;
+  --cr-brand-tone-40: #33616d;
+  --cr-brand-tone-41: #34626e;
+  --cr-brand-tone-42: #36626e;
+  --cr-brand-tone-43: #37636e;
+  --cr-brand-tone-44: #38636f;
+  --cr-brand-tone-45: #3a646f;
+  --cr-brand-tone-46: #3b646f;
+  --cr-brand-tone-47: #3c6570;
+  --cr-brand-tone-48: #3d6570;
+  --cr-brand-tone-49: #3f6670;
+  --cr-brand-tone-50: #406771;
+  --cr-brand-tone-51: #416771;
+  --cr-brand-tone-52: #436871;
+  --cr-brand-tone-53: #446871;
+  --cr-brand-tone-54: #456972;
+  --cr-brand-tone-55: #466972;
+  --cr-brand-tone-56: #486a72;
+  --cr-brand-tone-57: #496a73;
+  --cr-brand-tone-58: #4a6b73;
+  --cr-brand-tone-59: #4c6b73;
+  --cr-brand-tone-60: #4d6c74;
+  --cr-brand-tone-61: #4e6c74;
+  --cr-brand-tone-62: #4f6d74;
+  --cr-brand-tone-63: #516d75;
+  --cr-brand-tone-64: #526e75;
+  --cr-brand-tone-65: #536e75;
+  --cr-brand-tone-66: #546f75;
+  --cr-brand-tone-67: #566f76;
+  --cr-brand-tone-68: #577076;
+  --cr-brand-tone-69: #587076;
+  --cr-brand-tone-70: #5a7177;
+  --cr-brand-tone-71: #5b7177;
+  --cr-brand-tone-72: #5c7277;
+  --cr-brand-tone-73: #5d7278;
+  --cr-brand-tone-74: #5f7378;
+  --cr-brand-tone-75: #607378;
+  --cr-brand-tone-76: #617479;
+  --cr-brand-tone-77: #637479;
+  --cr-brand-tone-78: #647579;
+  --cr-brand-tone-79: #657579;
+  --cr-brand-tone-80: #66767a;
+  --cr-brand-tone-81: #68767a;
+  --cr-brand-tone-82: #69777a;
+  --cr-brand-tone-83: #6a777b;
+  --cr-brand-tone-84: #6c787b;
+  --cr-brand-tone-85: #6d787b;
+  --cr-brand-tone-86: #6e797c;
+  --cr-brand-tone-87: #6f797c;
+  --cr-brand-tone-88: #717a7c;
+  --cr-brand-tone-89: #727a7d;
+  --cr-brand-tone-90: #737b7d;
+  --cr-brand-tone-91: #747b7d;
+  --cr-brand-tone-92: #767c7e;
+  --cr-brand-tone-93: #777c7e;
+  --cr-brand-tone-94: #787d7e;
+  --cr-brand-tone-95: #7a7d7e;
+  --cr-brand-tone-96: #7b7e7f;
+  --cr-brand-tone-97: #7c7e7f;
+  --cr-brand-tone-98: #7d7f7f;
+  --cr-brand-tone-99: #7f7f80;
+  --cr-brand-tone-100: gray;
+  --cr-brand-dark-1: #004c60;
+  --cr-brand-dark-2: #004b5f;
+  --cr-brand-dark-3: #004b5e;
+  --cr-brand-dark-4: #004a5d;
+  --cr-brand-dark-5: #00495c;
+  --cr-brand-dark-6: #00485b;
+  --cr-brand-dark-7: #00485a;
+  --cr-brand-dark-8: #004759;
+  --cr-brand-dark-9: #004658;
+  --cr-brand-dark-10: #004557;
+  --cr-brand-dark-11: #004556;
+  --cr-brand-dark-12: #004455;
+  --cr-brand-dark-13: #004354;
+  --cr-brand-dark-14: #004253;
+  --cr-brand-dark-15: #004152;
+  --cr-brand-dark-16: #004151;
+  --cr-brand-dark-17: #004051;
+  --cr-brand-dark-18: #003f50;
+  --cr-brand-dark-19: #003e4f;
+  --cr-brand-dark-20: #003e4e;
+  --cr-brand-dark-21: #003d4d;
+  --cr-brand-dark-22: #003c4c;
+  --cr-brand-dark-23: #003b4b;
+  --cr-brand-dark-24: #003b4a;
+  --cr-brand-dark-25: #003a49;
+  --cr-brand-dark-26: #003948;
+  --cr-brand-dark-27: #003847;
+  --cr-brand-dark-28: #003746;
+  --cr-brand-dark-29: #003745;
+  --cr-brand-dark-30: #003644;
+  --cr-brand-dark-31: #003543;
+  --cr-brand-dark-32: #003442;
+  --cr-brand-dark-33: #003441;
+  --cr-brand-dark-34: #003340;
+  --cr-brand-dark-35: #00323f;
+  --cr-brand-dark-36: #00313e;
+  --cr-brand-dark-37: #00313d;
+  --cr-brand-dark-38: #00303c;
+  --cr-brand-dark-39: #002f3b;
+  --cr-brand-dark-40: #002e3a;
+  --cr-brand-dark-41: #002d39;
+  --cr-brand-dark-42: #002d38;
+  --cr-brand-dark-43: #002c37;
+  --cr-brand-dark-44: #002b36;
+  --cr-brand-dark-45: #002a35;
+  --cr-brand-dark-46: #002a34;
+  --cr-brand-dark-47: #002933;
+  --cr-brand-dark-48: #002832;
+  --cr-brand-dark-49: #002731;
+  --cr-brand-dark-50: #002731;
+  --cr-brand-dark-51: #002630;
+  --cr-brand-dark-52: #00252f;
+  --cr-brand-dark-53: #00242e;
+  --cr-brand-dark-54: #00232d;
+  --cr-brand-dark-55: #00232c;
+  --cr-brand-dark-56: #00222b;
+  --cr-brand-dark-57: #00212a;
+  --cr-brand-dark-58: #002029;
+  --cr-brand-dark-59: #002028;
+  --cr-brand-dark-60: #001f27;
+  --cr-brand-dark-61: #001e26;
+  --cr-brand-dark-62: #001d25;
+  --cr-brand-dark-63: #001c24;
+  --cr-brand-dark-64: #001c23;
+  --cr-brand-dark-65: #001b22;
+  --cr-brand-dark-66: #001a21;
+  --cr-brand-dark-67: #001920;
+  --cr-brand-dark-68: #00191f;
+  --cr-brand-dark-69: #00181e;
+  --cr-brand-dark-70: #00171d;
+  --cr-brand-dark-71: #00161c;
+  --cr-brand-dark-72: #00161b;
+  --cr-brand-dark-73: #00151a;
+  --cr-brand-dark-74: #001419;
+  --cr-brand-dark-75: #001318;
+  --cr-brand-dark-76: #001217;
+  --cr-brand-dark-77: #001216;
+  --cr-brand-dark-78: #001115;
+  --cr-brand-dark-79: #001014;
+  --cr-brand-dark-80: #000f13;
+  --cr-brand-dark-81: #000f12;
+  --cr-brand-dark-82: #000e11;
+  --cr-brand-dark-83: #000d10;
+  --cr-brand-dark-84: #000c10;
+  --cr-brand-dark-85: #000c0f;
+  --cr-brand-dark-86: #000b0e;
+  --cr-brand-dark-87: #000a0d;
+  --cr-brand-dark-88: #00090c;
+  --cr-brand-dark-89: #00080b;
+  --cr-brand-dark-90: #00080a;
+  --cr-brand-dark-91: #000709;
+  --cr-brand-dark-92: #000608;
+  --cr-brand-dark-93: #000507;
+  --cr-brand-dark-94: #000506;
+  --cr-brand-dark-95: #000405;
+  --cr-brand-dark-96: #000304;
+  --cr-brand-dark-97: #000203;
+  --cr-brand-dark-98: #000202;
+  --cr-brand-dark-99: #000101;
+  --cr-brand-dark-100: black;
+}

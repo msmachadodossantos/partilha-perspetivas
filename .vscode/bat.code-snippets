@@ -1,0 +1,12 @@
+{
+  "New folder": {
+    "scope": "bat",
+    "prefix": "New folder",
+    "body": "IF NOT EXIST ${1:folder-name} (MKDIR ${1:folder-name})"
+  },
+  "New file": {
+    "scope": "bat",
+    "prefix": "New file",
+    "body": "IF NOT EXIST ${1:file-name} (TYPE NUL > ${1:file-name})"
+  }
+}

@@ -1,0 +1,647 @@
+{
+  "HTML Template": {
+    "prefix": "bs5 html",
+    "scope": "html",
+    "body": [
+      "<!DOCTYPE html>",
+      "<html lang=\"en\">",
+      "",
+      "<head>",
+      "    <meta charset=\"UTF-8\">",
+      "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+      "    <title>DocumentTitle</title>",
+      "",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/rgb-wheel.css\" />",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/primary-ten-variants.css\" />",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/secondary-ten-variants.css\" />",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/tertiary-ten-variants.css\" />",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/quaternary-ten-variants.css\" />",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/quinary-ten-variants.css\" />",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/elevation.css\" />",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/bootstrap-532.css\" />",
+      "",
+      "    <link rel=\"stylesheet\" href=\"path_to_public/vendors/chroma-rio/1.0.0/vendors/twbs/bootstrap/5.3.2/css/bootstrap.min.css\" />",
+      "    <script defer src=\"path_to_public/vendors/chroma-rio/1.0.0/vendors/twbs/bootstrap/5.3.2/js/bootstrap.min.js\"></script>",
+      "</head>",
+      "",
+      "<body>",
+      "</body>",
+      "",
+      "</html>"
+    ]
+  },
+  "Bootstrap Media Queries": {
+    "prefix": "bs5 mq",
+    "scope": "css, scss",
+    "body": [
+      "// Imports",
+      "",
+      "// Variables",
+      "",
+      "// X-Small devices (portrait phones, less than 576px)",
+      "// No media query for `xs` since this is the default in Bootstrap",
+      "",
+      "// Small devices (landscape phones, 576px and up)",
+      "@media (min-width: 576px) {}",
+      "",
+      "// Medium devices (tablets, 768px and up)",
+      "@media (min-width: 768px) {}",
+      "",
+      "// Large devices (desktops, 992px and up)",
+      "@media (min-width: 992px) {}",
+      "",
+      "// X-Large devices (large desktops, 1200px and up)",
+      "@media (min-width: 1200px) {}",
+      "",
+      "// XX-Large devices (larger desktops, 1400px and up)",
+      "@media (min-width: 1400px) {}",
+      "",
+      "// Dark Mode",
+      "@media (prefers-color-scheme: dark) {}",
+      "",
+      "// Print Mode",
+      "@media print {}"
+    ]
+  },
+  "Bootstrap Grid": {
+    "prefix": "bs5 grid",
+    "scope": "html",
+    "body": [
+      "<div class=\"container\">",
+      "    <div class=\"row\">",
+      "        <div class=\"col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12\">$1</div>",
+      "    </div>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Column": {
+    "prefix": "bs5 col",
+    "scope": "html",
+    "body": ["<div class=\"col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12\">$1</div>"]
+  },
+
+  "Bootstrap Accordion": {
+    "prefix": "bs5 accordion",
+    "scope": "html",
+    "body": [
+      "<div class=\"accordion\" id=\"accordion-${CURRENT_SECONDS_UNIX}\">",
+      "    ${1: Insert Accordion Items Here}",
+      "</div>"
+    ]
+  },
+  "Bootstrap Accordion Item": {
+    "prefix": "bs5 accordion-item",
+    "scope": "html",
+    "body": [
+      "<div class=\"accordion-item\">",
+      "    <h2 class=\"accordion-header\">",
+      "        <button class=\"accordion-button collapsed\" type=\"button\" data-bs-toggle=\"collapse\"",
+      "            data-bs-target=\"#flush-${CURRENT_SECONDS_UNIX}\" aria-expanded=\"false\"",
+      "            aria-controls=\"flush-${CURRENT_SECONDS_UNIX}\">",
+      "            Accordion's Title",
+      "        </button>",
+      "    </h2>",
+      "    <!-- FIXME: the following 'data-bs-parent' should be the same as .accordion's id -->",
+      "    <div id=\"flush-${CURRENT_SECONDS_UNIX}\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion-id\">",
+      "        <div class=\"accordion-body\">",
+      "            Accordions's Content",
+      "        </div>",
+      "    </div>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Alert": {
+    "prefix": "bs5 alert",
+    "scope": "html",
+    "body": [
+      "<div class=\"alert alert-warning alert-dismissible fade show\" role=\"alert\">",
+      "    ${1:This is a warning alert—check it out!}",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"alert\" aria-label=\"Close\"></button>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Badge": {
+    "prefix": "bs5 badge",
+    "scope": "html",
+    "body": ["<span class=\"badge text-bg-primary\">primary</span>"]
+  },
+  "Bootstrap Breadcrumb": {
+    "prefix": "bs5 breadcrumb",
+    "scope": "html",
+    "body": [
+      "<nav aria-label=\"breadcrumb\">",
+      "  <ol class=\"breadcrumb\">",
+      "    <li class=\"breadcrumb-item\"><a href=\"#\">Home</a></li>",
+      "    <li class=\"breadcrumb-item\"><a href=\"#\">Library</a></li>",
+      "    <li class=\"breadcrumb-item active\" aria-current=\"page\">Data</li>",
+      "  </ol>",
+      "</nav>"
+    ]
+  },
+  "Bootstrap Button: Button Element": {
+    "prefix": "bs5 button: button",
+    "scope": "html",
+    "body": ["<button type=\"button\" class=\"btn btn-primary\">Primary</button>"]
+  },
+  "Bootstrap Button: Hyperlink": {
+    "prefix": "bs5 button: hyperlink",
+    "scope": "html",
+    "body": ["<a class=\"btn btn-primary\" href=\"#\" role=\"button\">Link</a>"]
+  },
+  "Bootstrap Button: Block": {
+    "prefix": "bs5 buttons: block",
+    "scope": "html",
+    "body": [
+      "<div class=\"d-grid gap-2\">",
+      "  <button class=\"btn btn-primary\" type=\"button\">Button</button>",
+      "  <button class=\"btn btn-primary\" type=\"button\">Button</button>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Button Group": {
+    "prefix": "bs5 button group",
+    "scope": "html",
+    "body": [
+      "<div class=\"btn-group\" role=\"group\" aria-label=\"Basic example\">",
+      "  <button type=\"button\" class=\"btn btn-primary\">Left</button>",
+      "  <button type=\"button\" class=\"btn btn-primary\">Middle</button>",
+      "  <button type=\"button\" class=\"btn btn-primary\">Right</button>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Button Group: Hyperlink": {
+    "prefix": "bs5 button group: hyperlink",
+    "scope": "html",
+    "body": [
+      "<div class=\"btn-group\">",
+      "  <a href=\"#\" class=\"btn btn-primary active\" aria-current=\"page\">Active link</a>",
+      "  <a href=\"#\" class=\"btn btn-primary\">Link</a>",
+      "  <a href=\"#\" class=\"btn btn-primary\">Link</a>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Button Group: Container for checkbox or radio": {
+    "prefix": "bs5 button group: container checkbox or radio",
+    "scope": "html",
+    "body": [
+      "<div class=\"btn-group\" role=\"group\" aria-label=\"Basic checkbox toggle button group\">",
+      "  ${1:bs5 button group: checkbox | bs5 button group: radio}",
+      "</div>"
+    ]
+  },
+  "Bootstrap Button Group: Checkbox": {
+    "prefix": "bs5 button group: checkbox",
+    "scope": "html",
+    "body": [
+      "<input type=\"checkbox\" class=\"btn-check\" id=\"checkbox-${CURRENT_SECONDS_UNIX}\" autocomplete=\"off\" />",
+      "<label class=\"btn btn-outline-primary\" for=\"checkbox-${CURRENT_SECONDS_UNIX}\">${1:Label}</label>"
+    ]
+  },
+  "Bootstrap Button Group: Radio": {
+    "prefix": "bs5 button group: radio",
+    "scope": "html",
+    "body": [
+      "<input type=\"radio\" class=\"btn-check\" name=\"btnradio\" id=\"radio-${CURRENT_SECONDS_UNIX}\" autocomplete=\"off\" />",
+      "<label class=\"btn btn-outline-primary\" for=\"radio-${CURRENT_SECONDS_UNIX}\">${1:Label}</label>"
+    ]
+  },
+  "Bootstrap Button Group: Toolbar": {
+    "prefix": "bs5 button group: toolbar",
+    "scope": "html",
+    "body": [
+      "<div class=\"btn-toolbar\" role=\"toolbar\" aria-label=\"Toolbar with button groups\">",
+      "  ${1:.btn-group.me-*}",
+      "</div>"
+    ]
+  },
+  "Bootstrap Button Group: Vertical": {
+    "prefix": "bs5 button group: vertical",
+    "scope": "html",
+    "body": [
+      "<div class=\"btn-group-vertical\" role=\"group\" aria-label=\"Vertical button group\">",
+      "  ${1:Buttons}",
+      "</div>"
+    ]
+  },
+  "Bootstrap Card": {
+    "prefix": "bs5 card",
+    "scope": "html",
+    "body": [
+      "<div class=\"card\">",
+      "  <div class=\"card-header\">Title</div>",
+      "  <div class=\"card-body\">Content</div>",
+      "  <div class=\"card-footer text-body-secondary\">Footer</div>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Card: Kitchen sink": {
+    "prefix": "bs5 card: kitchen sink",
+    "scope": "html",
+    "body": [
+      "<div class=\"card\">",
+      "  <img src=\"...\" class=\"card-img-top\" alt=\"...\" />",
+      "  <div class=\"card-body\">",
+      "    <h5 class=\"card-title\">Card title</h5>",
+      "    <p class=\"card-text\">",
+      "      Some quick example text to build on the card title and make up the bulk of the card's content.",
+      "    </p>",
+      "  </div>",
+      "  <ul class=\"list-group list-group-flush\">",
+      "    <li class=\"list-group-item\">An item</li>",
+      "    <li class=\"list-group-item\">A second item</li>",
+      "    <li class=\"list-group-item\">A third item</li>",
+      "  </ul>",
+      "  <div class=\"card-body\">",
+      "    <a href=\"#\" class=\"card-link\">Card link</a>",
+      "    <a href=\"#\" class=\"card-link\">Another link</a>",
+      "  </div>",
+      "  <div class=\"card-footer text-body-secondary\">Footer</div>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Carousel": {
+    "prefix": "bs5 carousel",
+    "scope": "html",
+    "body": [
+      "<div id=\"carousel-${CURRENT_SECONDS_UNIX}\" class=\"carousel slide\">",
+      "  <div class=\"carousel-indicators\">",
+      "    <button type=\"button\" data-bs-target=\"#carousel-${CURRENT_SECONDS_UNIX}\" data-bs-slide-to=\"0\" class=\"active\" aria-current=\"true\" aria-label=\"Slide 1\"></button>",
+      "    <button type=\"button\" data-bs-target=\"#carousel-${CURRENT_SECONDS_UNIX}\" data-bs-slide-to=\"1\" aria-label=\"Slide 2\"></button>",
+      "    <button type=\"button\" data-bs-target=\"#carousel-${CURRENT_SECONDS_UNIX}\" data-bs-slide-to=\"2\" aria-label=\"Slide 3\"></button>",
+      "  </div>",
+      "  <div class=\"carousel-inner\">",
+      "    <div class=\"carousel-item active\">",
+      "      <img src=\"...\" class=\"d-block w-100\" alt=\"...\" />",
+      "      <div class=\"carousel-caption d-none d-md-block\">",
+      "        <h5>First slide label</h5>",
+      "        <p>Some representative placeholder content for the first slide.</p>",
+      "      </div>",
+      "    </div>",
+      "    <div class=\"carousel-item\">",
+      "      <img src=\"...\" class=\"d-block w-100\" alt=\"...\" />",
+      "      <div class=\"carousel-caption d-none d-md-block\">",
+      "        <h5>Second slide label</h5>",
+      "        <p>Some representative placeholder content for the second slide.</p>",
+      "      </div>",
+      "    </div>",
+      "    <div class=\"carousel-item\">",
+      "      <img src=\"...\" class=\"d-block w-100\" alt=\"...\" />",
+      "      <div class=\"carousel-caption d-none d-md-block\">",
+      "        <h5>Third slide label</h5>",
+      "        <p>Some representative placeholder content for the third slide.</p>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "  <button class=\"carousel-control-prev\" type=\"button\" data-bs-target=\"#carousel-${CURRENT_SECONDS_UNIX}\" data-bs-slide=\"prev\">",
+      "    <span class=\"carousel-control-prev-icon\" aria-hidden=\"true\"></span>",
+      "    <span class=\"visually-hidden\">Previous</span>",
+      "  </button>",
+      "  <button class=\"carousel-control-next\" type=\"button\" data-bs-target=\"#carousel-${CURRENT_SECONDS_UNIX}\" data-bs-slide=\"next\">",
+      "    <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>",
+      "    <span class=\"visually-hidden\">Next</span>",
+      "  </button>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Close Button": {
+    "prefix": "bs5 close button",
+    "scope": "html",
+    "body": ["<button type=\"button\" class=\"btn-close\" disabled aria-label=\"Close\"></button>"]
+  },
+  "Bootstrap Collapse": {
+    "prefix": "bs5 collapse",
+    "scope": "html",
+    "body": [
+      "<p class=\"d-inline-flex gap-1\">",
+      "  <a class=\"btn btn-primary\" data-bs-toggle=\"collapse\" href=\"#collapse-${CURRENT_SECONDS_UNIX}\" role=\"button\" aria-expanded=\"false\" aria-controls=\"collapse-${CURRENT_SECONDS_UNIX}\">",
+      "    Link with href",
+      "  </a>",
+      "  <button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#collapse-${CURRENT_SECONDS_UNIX}\" aria-expanded=\"false\" aria-controls=\"collapse-${CURRENT_SECONDS_UNIX}\">",
+      "    Button with data-bs-target",
+      "  </button>",
+      "</p>",
+      "<div class=\"collapse\" id=\"collapse-${CURRENT_SECONDS_UNIX}\">",
+      "  <div class=\"card card-body\">",
+      "    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user",
+      "    activates the relevant trigger.",
+      "  </div>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Dropdown": {
+    "prefix": "bs5 dropdown",
+    "scope": "html",
+    "body": [
+      "<div class=\"dropdown\">",
+      "  <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "    Dropdown button",
+      "  </button>",
+      "  <ul class=\"dropdown-menu\">",
+      "    <li><h6 class=\"dropdown-header\">Dropdown header</h6></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>",
+      "    <li><hr class=\"dropdown-divider\" /></li>",
+      "    <li><a class=\"dropdown-item\" href=\"#\">Separated action</a></li>",
+      "  </ul>",
+      "</div>"
+    ]
+  },
+  "Bootstrap List Group": {
+    "prefix": "bs5 list group",
+    "scope": "html",
+    "body": [
+      "<ul class=\"list-group\">",
+      "  <li class=\"list-group-item\">An item</li>",
+      "  <li class=\"list-group-item\">A second item</li>",
+      "  <li class=\"list-group-item\">A third item</li>",
+      "  <li class=\"list-group-item\">A fourth item</li>",
+      "  <li class=\"list-group-item\">And a fifth one</li>",
+      "</ul>"
+    ]
+  },
+  "Bootstrap List Group: Hyperlink": {
+    "prefix": "bs5 list group: hyperlink",
+    "scope": "html",
+    "body": [
+      "<div class=\"list-group\">",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action active\" aria-current=\"true\"> The current link item </a>",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action\">A second link item</a>",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action\">A third link item</a>",
+      "  <a href=\"#\" class=\"list-group-item list-group-item-action\">A fourth link item</a>",
+      "  <a class=\"list-group-item list-group-item-action disabled\" aria-disabled=\"true\">A disabled link item</a>",
+      "</div>"
+    ]
+  },
+  "Bootstrap List Group: Button": {
+    "prefix": "bs5 list group: button",
+    "scope": "html",
+    "body": [
+      "<div class=\"list-group\">",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action active\" aria-current=\"true\">",
+      "    The current button",
+      "  </button>",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action\">A second button item</button>",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action\">A third button item</button>",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action\">A fourth button item</button>",
+      "  <button type=\"button\" class=\"list-group-item list-group-item-action\" disabled>A disabled button item</button>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Modal": {
+    "prefix": "bs5 modal",
+    "scope": "html",
+    "body": [
+      "<!-- Button trigger modal -->",
+      "<button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"modal\" data-bs-target=\"#modal-${CURRENT_SECONDS_UNIX}\">",
+      "  Launch demo modal",
+      "</button>",
+      "",
+      "<!-- Modal -->",
+      "<div class=\"modal fade\" id=\"modal-${CURRENT_SECONDS_UNIX}\" tabindex=\"-1\" aria-labelledby=\"modal-label-${CURRENT_SECONDS_UNIX}\" aria-hidden=\"true\" data-bs-backdrop=\"static\" data-bs-keyboard=\"false\">",
+      "  <div class=\"modal-dialog\">",
+      "    <div class=\"modal-content\">",
+      "      <div class=\"modal-header\">",
+      "        <h1 class=\"modal-title fs-5\" id=\"modal-label-${CURRENT_SECONDS_UNIX}\">${1:title}</h1>",
+      "        <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"modal\" aria-label=\"Close\"></button>",
+      "      </div>",
+      "      <div class=\"modal-body\">${2:content}</div>",
+      "      <div class=\"modal-footer\">",
+      "        <button type=\"button\" class=\"btn btn-secondary\" data-bs-dismiss=\"modal\">Close</button>",
+      "        <button type=\"button\" class=\"btn btn-primary\">Save changes</button>",
+      "      </div>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Navbar": {
+    "prefix": "bs5 navbar",
+    "scope": "html",
+    "body": [
+      "<nav class=\"navbar navbar-expand-lg bg-body-tertiary\">",
+      "  <div class=\"container-fluid\">",
+      "    <a class=\"navbar-brand\" href=\"#\">Navbar</a>",
+      "    <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\" data-bs-target=\"#navbar-${CURRENT_SECONDS_UNIX}\" aria-controls=\"navbar-${CURRENT_SECONDS_UNIX}\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">",
+      "      <span class=\"navbar-toggler-icon\"></span>",
+      "    </button>",
+      "    <div class=\"collapse navbar-collapse\" id=\"navbar-${CURRENT_SECONDS_UNIX}\">",
+      "      <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">",
+      "        <li class=\"nav-item\">",
+      "          <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Home</a>",
+      "        </li>",
+      "        <li class=\"nav-item\">",
+      "          <a class=\"nav-link\" href=\"#\">Link</a>",
+      "        </li>",
+      "        <li class=\"nav-item dropdown\">",
+      "          <a class=\"nav-link dropdown-toggle\" href=\"#\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">",
+      "            Dropdown",
+      "          </a>",
+      "          <ul class=\"dropdown-menu\">",
+      "            <li><a class=\"dropdown-item\" href=\"#\">Action</a></li>",
+      "            <li><a class=\"dropdown-item\" href=\"#\">Another action</a></li>",
+      "            <li><hr class=\"dropdown-divider\" /></li>",
+      "            <li><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>",
+      "          </ul>",
+      "        </li>",
+      "        <li class=\"nav-item\">",
+      "          <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>",
+      "        </li>",
+      "      </ul>",
+      "      <form class=\"d-flex\" role=\"search\">",
+      "        <input class=\"form-control me-2\" type=\"search\" placeholder=\"Search\" aria-label=\"Search\" />",
+      "        <button class=\"btn btn-outline-success\" type=\"submit\">Search</button>",
+      "      </form>",
+      "    </div>",
+      "  </div>",
+      "</nav>"
+    ]
+  },
+  "Bootstrap Nav": {
+    "prefix": "bs5 nav",
+    "scope": "html",
+    "body": [
+      "<ul class=\"nav nav-underline\">",
+      "  <li class=\"nav-item\">",
+      "    <a class=\"nav-link active\" aria-current=\"page\" href=\"#\">Active</a>",
+      "  </li>",
+      "  <li class=\"nav-item\">",
+      "    <a class=\"nav-link\" href=\"#\">Link</a>",
+      "  </li>",
+      "  <li class=\"nav-item\">",
+      "    <a class=\"nav-link\" href=\"#\">Link</a>",
+      "  </li>",
+      "  <li class=\"nav-item\">",
+      "    <a class=\"nav-link disabled\" aria-disabled=\"true\">Disabled</a>",
+      "  </li>",
+      "</ul>"
+    ]
+  },
+  "Bootstrap Offcanvas": {
+    "prefix": "bs5 offcanvas",
+    "scope": "html",
+    "body": [
+      "<button class=\"btn btn-primary\" type=\"button\" data-bs-toggle=\"offcanvas\" data-bs-target=\"#offcanvas-${CURRENT_SECONDS_UNIX}\" aria-controls=\"offcanvas-${CURRENT_SECONDS_UNIX}\">",
+      "  Toggle static offcanvas",
+      "</button>",
+      "",
+      "<div class=\"offcanvas offcanvas-start\" data-bs-backdrop=\"static\" tabindex=\"-1\" id=\"offcanvas-${CURRENT_SECONDS_UNIX}\" aria-labelledby=\"offcanvas-label-${CURRENT_SECONDS_UNIX}\">",
+      "  <div class=\"offcanvas-header\">",
+      "    <h5 class=\"offcanvas-title\" id=\"offcanvas-label-${CURRENT_SECONDS_UNIX}\">Offcanvas</h5>",
+      "    <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"offcanvas\" aria-label=\"Close\"></button>",
+      "  </div>",
+      "  <div class=\"offcanvas-body\">",
+      "    <div>I will not close if you click outside of me.</div>",
+      "  </div>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Page Navigation": {
+    "prefix": "bs5 page navigation",
+    "scope": "html",
+    "body": [
+      "<nav aria-label=\"Page navigation example\">",
+      "  <ul class=\"pagination justify-content-center\">",
+      "    <li class=\"page-item disabled\">",
+      "      <a class=\"page-link\">Previous</a>",
+      "    </li>",
+      "    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">1</a></li>",
+      "    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">2</a></li>",
+      "    <li class=\"page-item\"><a class=\"page-link\" href=\"#\">3</a></li>",
+      "    <li class=\"page-item\">",
+      "      <a class=\"page-link\" href=\"#\">Next</a>",
+      "    </li>",
+      "  </ul>",
+      "</nav>"
+    ]
+  },
+  "Bootstrap Placeholder": {
+    "prefix": "bs5 placeholder",
+    "scope": "html",
+    "body": [
+      "<div class=\"placeholder-glow\">",
+      "  <span class=\"placeholder col-12\"></span>",
+      "  <span class=\"placeholder col-12\"></span>",
+      "  <span class=\"placeholder col-12\"></span>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Popover": {
+    "prefix": "bs5 popover",
+    "scope": "html",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-primary\" data-bs-toggle=\"popover\" data-bs-placement=\"top\" data-bs-title=\"Popover title\" data-bs-content=\"And here's some amazing content. It's very engaging. Right?\">",
+      "  Click to toggle popover",
+      "</button>"
+    ]
+  },
+  "Bootstrap Progress": {
+    "prefix": "bs5 progress",
+    "scope": "html",
+    "body": [
+      "<div class=\"progress\" role=\"progressbar\" aria-label=\"Basic example\" aria-valuenow=\"75\" aria-valuemin=\"0\" aria-valuemax=\"100\">",
+      "  <div class=\"progress-bar w-75\"></div>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Spinner": {
+    "prefix": "bs5 spinner",
+    "scope": "html",
+    "body": [
+      "<div class=\"spinner-border\" role=\"status\">",
+      "  <span class=\"visually-hidden\">Loading...</span>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Toast": {
+    "prefix": "bs5 toast",
+    "scope": "html",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-primary\" id=\"toast-trigger-${CURRENT_SECONDS_UNIX}\">Show live toast</button>",
+      "",
+      "<div class=\"toast-container position-fixed bottom-0 end-0 p-3\">",
+      "  <div id=\"toast-${CURRENT_SECONDS_UNIX}\" class=\"toast\" role=\"alert\" aria-live=\"assertive\" aria-atomic=\"true\">",
+      "    <div class=\"toast-header\">",
+      "      <img src=\"...\" class=\"rounded me-2\" alt=\"...\" />",
+      "      <strong class=\"me-auto\">Bootstrap</strong>",
+      "      <small>11 mins ago</small>",
+      "      <button type=\"button\" class=\"btn-close\" data-bs-dismiss=\"toast\" aria-label=\"Close\"></button>",
+      "    </div>",
+      "    <div class=\"toast-body\">Hello, world! This is a toast message.</div>",
+      "  </div>",
+      "</div>",
+      "",
+      "<script defer>",
+      "  const toastTrigger_${CURRENT_SECONDS_UNIX} = document.getElementById(\"toast-trigger-${CURRENT_SECONDS_UNIX}\");",
+      "  const toast_${CURRENT_SECONDS_UNIX} = document.getElementById(\"toast-${CURRENT_SECONDS_UNIX}\");",
+      "",
+      "  if (toastTrigger_${CURRENT_SECONDS_UNIX}) {",
+      "    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toast_${CURRENT_SECONDS_UNIX});",
+      "    toastTrigger_${CURRENT_SECONDS_UNIX}.addEventListener(\"click\", () => {",
+      "      toastBootstrap.show();",
+      "    });",
+      "  }",
+      "</script>"
+    ]
+  },
+  "Bootstrap Tooltip": {
+    "prefix": "bs5 tooltip",
+    "scope": "html",
+    "body": [
+      "<button type=\"button\" class=\"btn btn-secondary\" data-bs-toggle=\"tooltip\" data-bs-placement=\"top\" data-bs-title=\"Tooltip on top\">",
+      "  Tooltip on top",
+      "</button>"
+    ]
+  },
+  "Bootstrap Table": {
+    "prefix": "bs5 table",
+    "scope": "html",
+    "body": [
+      "<div class=\"table-responsive\">",
+      "  <table class=\"table table-striped table-hover caption-top\">",
+      "    <caption>${1:Caption}</caption>",
+      "",
+      "    <thead>",
+      "      <tr>",
+      "        <th scope=\"${2:col | row}\"></th>",
+      "      </tr>",
+      "    </thead>",
+      "",
+      "    <tbody class=\"table-group-divider\">",
+      "      <tr>",
+      "        <td></td>",
+      "      </tr>",
+      "    </tbody>",
+      "",
+      "    <tfoot class=\"table-group-divider\">",
+      "      <tr>",
+      "        <td></td>",
+      "      </tr>",
+      "    </tfoot>",
+      "  </table>",
+      "</div>"
+    ]
+  },
+  "Bootstrap Figure": {
+    "prefix": "bs5 figure",
+    "scope": "html",
+    "body": [
+      "<figure class=\"figure\">",
+      "  <img src=\"...\" class=\"figure-img img-fluid rounded\" alt=\"...\">",
+      "  <figcaption class=\"figure-caption\">A caption for the above image.</figcaption>",
+      "</figure>"
+    ]
+  },
+  "Bootstrap Form Input: Text": {
+    "prefix": "bs5 form input: text",
+    "body": [
+      "<div class=\"mb-3 row\">",
+      "  <label for=\"input-$CURRENT_SECONDS_UNIX\" class=\"col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 col-form-label\">${1:INPUT_LABEL}</label>",
+      "",
+      "  <div class=\"col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12\">",
+      "    <input type=\"${2:INPUT_TYPE}\" class=\"form-control\" id=\"input-$CURRENT_SECONDS_UNIX\" placeholder=\"${3:INPUT_PLACEHOLDER}\" />",
+      "",
+      "    <div class=\"form-text\">${4:INPUT_DESCRIPTION}</div>",
+      "  </div>",
+      "</div>"
+    ]
+  }
+}

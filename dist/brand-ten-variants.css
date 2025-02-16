@@ -1,0 +1,66 @@
+/**
+ * Lighten a color by a specified amount.
+ *
+ * @param {Color} $color - The base color to lighten.
+ * @param {Number} $amount - The amount by which to lighten the color (default: 10%).
+ *
+ * @return {Color} - The resulting color after lightening.
+ */
+/**
+ * Adjust the tone of a color by a specified amount.
+ *
+ * @param {Color} $color - The base color to adjust the tone of.
+ * @param {Number} $amount - The amount by which to adjust the tone (default: 10%).
+ *
+ * @return {Color} - The resulting color after adjusting the tone.
+ */
+/**
+ * Darken a color by a specified amount.
+ *
+ * @param {Color} $color - The base color to darken.
+ * @param {Number} $amount - The amount by which to darken the color (default: 10%).
+ *
+ * @return {Color} - The resulting color after darkening.
+ */
+/**
+ * Mix two colors together by a specified amount.
+ *
+ * @param {Color} $color1 - The first color to mix.
+ * @param {Color} $color2 - The second color to mix.
+ * @param {Number} $amount - The amount by which to mix the colors (default: 50%).
+ *
+ * @return {Color} - The resulting color after mixing.
+ */
+:root {
+  --cr-brand: #004d61;
+  --cr-brand-light-10: #1a5f71;
+  --cr-brand-light-20: #337181;
+  --cr-brand-light-30: #4d8290;
+  --cr-brand-light-40: #6694a0;
+  --cr-brand-light-50: #80a6b0;
+  --cr-brand-light-60: #99b8c0;
+  --cr-brand-light-70: #b3cad0;
+  --cr-brand-light-80: #ccdbdf;
+  --cr-brand-light-90: #e6edef;
+  --cr-brand-light-100: white;
+  --cr-brand-tone-10: #0d5264;
+  --cr-brand-tone-20: #1a5767;
+  --cr-brand-tone-30: #265c6a;
+  --cr-brand-tone-40: #33616d;
+  --cr-brand-tone-50: #406771;
+  --cr-brand-tone-60: #4d6c74;
+  --cr-brand-tone-70: #5a7177;
+  --cr-brand-tone-80: #66767a;
+  --cr-brand-tone-90: #737b7d;
+  --cr-brand-tone-100: gray;
+  --cr-brand-dark-10: #004557;
+  --cr-brand-dark-20: #003e4e;
+  --cr-brand-dark-30: #003644;
+  --cr-brand-dark-40: #002e3a;
+  --cr-brand-dark-50: #002731;
+  --cr-brand-dark-60: #001f27;
+  --cr-brand-dark-70: #00171d;
+  --cr-brand-dark-80: #000f13;
+  --cr-brand-dark-90: #00080a;
+  --cr-brand-dark-100: black;
+}

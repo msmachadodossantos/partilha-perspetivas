@@ -1,0 +1,29 @@
+@import "variables";
+
+// The gray color in the Bootstrap framework is harmonized with the original blue color.
+// Since we are changing the blue color, we have to change the gray color as well: see $cr-white.
+// Oh, these colors are hardcoded in the Bootstrap framework,
+// but this file is imported there and the following variables are attributed as needed.
+
+// Harmonizing the gray palette with the $base-color.
+$cr-gray-100: darken($cr-white, 10%);
+$cr-gray-200: darken($cr-white, 20%);
+$cr-gray-300: darken($cr-white, 30%);
+$cr-gray-400: darken($cr-white, 40%);
+$cr-gray-500: darken($cr-white, 50%);
+$cr-gray-600: darken($cr-white, 60%);
+$cr-gray-700: darken($cr-white, 70%);
+$cr-gray-800: darken($cr-white, 80%);
+$cr-gray-900: darken($cr-white, 90%);
+
+// The bootstrap colors should also harmonize with the color palette.
+$cr-blue: mixer($base-color, #0d6efd, $amount-to-mix);
+$cr-indigo: mixer($base-color, #6610f2, $amount-to-mix);
+$cr-purple: mixer($base-color, #6f42c1, $amount-to-mix);
+$cr-pink: mixer($base-color, #d63384, $amount-to-mix);
+$cr-red: mixer($base-color, #dc3545, $amount-to-mix);
+$cr-orange: mixer($base-color, #fd7e14, $amount-to-mix);
+$cr-yellow: mixer($base-color, #ffc107, $amount-to-mix);
+$cr-green: mixer($base-color, #198754, $amount-to-mix);
+$cr-teal: mixer($base-color, #20c997, $amount-to-mix);
+$cr-cyan: mixer($base-color, #0dcaf0, $amount-to-mix);
