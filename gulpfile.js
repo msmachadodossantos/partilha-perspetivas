@@ -45,8 +45,14 @@ function copyBootstrap533() {
 
 /*  ---------------------------------------------------------------------------------------------------------------   */
 
+function copyBootstrapIcons1113() {
+  return gulp.src("vendor/twbs/bootstrap-icons/1.11.3/**/*").pipe(gulp.dest("dist/vendor/twbs/bootstrap-icons/1.11.3"));
+}
+
+/*  ---------------------------------------------------------------------------------------------------------------   */
+
 exports.default = function () {
-  watch(allSrc, series(cleanCoreStyle, coreStyle, copyBootstrap532, copyBootstrap533));
+  watch(allSrc, series(cleanCoreStyle, coreStyle, copyBootstrap532, copyBootstrap533, copyBootstrapIcons1113));
 };
 
-exports.dist = series(cleanCoreStyle, coreStyle, copyBootstrap532, copyBootstrap533);
+exports.dist = series(cleanCoreStyle, coreStyle, copyBootstrap532, copyBootstrap533, copyBootstrapIcons1113);
